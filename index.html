@@ -1,1 +1,366 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color: black;
+            font-family: cursive;
+            color: white;
+        }
+        h1{ text-align: center;}
+        table, th,td{
+            border: 3px solid white;
+            border-radius: 20px;
+        }
+        th, td{
+            
+            text-align: center;
+            padding: 6px;
+        }
+        tr:nth-child(even){background-color: rgb(100, 100, 100);}
+        tr:nth-child(odd){background-color: rgb(184, 184, 184);}
+        tr:hover {background-color: #000000;}
+        * {
+                box-sizing: border-box;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }   
 
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 600px){
+            .column{
+                width:100%;
+            }
+        }
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            overflow:hidden;
+            background-color:crimson;
+        }
+        li {
+            float:left;
+        }
+        li a{
+            display :grid;
+            color:white;
+            text-align:center;
+            padding:25px;
+            text-decoration: none;
+            font-size: larger;
+        }
+        li a:hover{
+            background-color:rgb(0, 0, 0);
+        }
+        .cont{
+            padding:30px;
+        }
+        a:link{
+            color:yellow;
+            background-color: transparent;
+        }
+        a:visited{
+            color:blue;
+            background-color: transparent;
+        }
+        a:hover{
+            color:orangered;
+            background-color: transparent;
+        }
+        <!-- * { 
+                box-sizing: border-box;
+        } -->
+        .col {
+            float: left;
+            width: 25%;
+            padding: 3px;
+            overflow: none;
+        }   
+
+        .r::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 900px){
+            .col{
+                width:50%;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .col{
+                width:100%;
+            }
+        }
+
+    </style>
+    <title>
+        Formula1-Hrishit's Website
+    </title>
+    <link rel="icon" type="image/png" href="image/favicon.png.png">
+</head>
+<body>
+    <div class="cont">
+    <h1 style="font-size:60px "><img src="image/favicon.png.png" alt="Formula1_logo" style="width: 100px; height: 80px; padding: 20px;"><mark style="color:white; background-color:rgb(220, 20, 60); border: 5px solid rgb(227,66,52)">Welcome to Formula1</mark></h1>
+    <ul>
+        <li><a style="color:white;" href="#Home">Home</a></li>
+        <li><a style="color:white;" href="#DC2021">2021 Driver's Standings</a></li>
+        <li><a style="color:white;" href="#CC
+            ">2021 Constructor's Standings</a></li>
+        <li><a style="color:white;" href="#sch">2022 Schedule</a></li>
+    </ul>
+    <h1 id="Home">HOME</h1>
+    <p style="font-size: larger;">After an exciting 2021 season, which saw 
+        <a href="https://www.formula1.com/en/drivers/max-verstappen.html" target="_blank">Max Verstappen</a> clinch the Formula 1 Title-2021.
+         <abbr title="Formula 1" style="font-weight: bolder; text-decoration: none;">F1</abbr> will be heading into 2022 for another thrilling season. Formula 1 has 
+         revealed the calendar for the 2022 season, with a record-breaking 23 Grand Prix schedule being approved by the FIA’s World Motor Sport Council. The season
+         will begin in Bahrain on 20 March and finish in Abu Dhabi on 20 November, one month before Christmas – with Miami hosting the first of two races in the United
+         States. Due to ongoing pandemic conditions, China will not be included on the 2022 calendar. China will be restored to the calendar as soon as conditions allow.
+         “The 2022 season follows an unprecedented two years for Formula 1 in which the COVID-19 pandemic resulted in revised calendar of 17 races in 2020 and 22 races
+         in 2021 – a huge achievement given the international nature of the sport,” said F1 in a statement.</p>
+    <div class="row">
+        <div class="column">
+            <img src="image/F1.jpg" alt="F1_Pic" style="width: 100%; height: 600px;">
+        </div>
+        <div class="column">
+            <img src="image/F1_1.jpg" alt="F1_Pic" style="width: 100%; height: 600px;">
+        </div>
+    </div>
+    
+    
+    <hr size="10px" noshade>
+    <h1 id="DC2021">2021 Driver's Championship</h1>
+    <table style="width: 100%;">
+        <tr>
+            <th>#</th>
+            <th>Driver Name</th>
+            <th>Team Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td><a href="https://www.formula1.com/en/drivers/max-verstappen.html" target="_blank" style="text-decoration: none">Max Verstappen</a></td>
+            <td>Red Bull Racing Honda</td>
+            <td>395.5</td>
+        </tr>
+        
+        <tr>
+            <td>2.</td>
+            <td><a href="https://www.formula1.com/en/drivers/lewis-hamilton.html" target="_blank" style="text-decoration: none">Lewis Hamilton</a></td>
+            <td>Mercedes</td>
+            <td>387.5</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td><a href="https://www.formula1.com/en/drivers/valtteri-bottas.html" target="_blank" style="text-decoration: none">Valterri Bottas</a></td>
+            <td>Mercedes</td>
+            <td>226</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td><a href="https://www.formula1.com/en/drivers/sergio-perez.html" target="_blank" style="text-decoration: none">Sergio Perez</a></td>
+            <td>Red Bull Racing Honda</td>
+            <td>190</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td><a href="https://www.formula1.com/en/drivers/carlos-sainz.html" target="_blank" style="text-decoration: none">Carlos Sainz</a></td>
+            <td>Ferrari</td>
+            <td>164.5</td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td><a href="https://www.formula1.com/en/drivers/lando-norris.html" target="_blank" style="text-decoration: none">Lando Norris</a></td>
+            <td>McLaren Mercedes</td>
+            <td>160</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td><a href="https://www.formula1.com/en/drivers/charles-leclerc.html" target="_blank" style="text-decoration: none">Charles Leclerc</a></td>
+            <td>Ferrari</td>
+            <td>159</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td><a href="https://www.formula1.com/en/drivers/daniel-ricciardo.html" target="_blank" style="text-decoration: none">Daniel Ricciardo</a></td>
+            <td>McLaren Mercedes</td>
+            <td>115</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td><a href="https://www.formula1.com/en/drivers/pierre-gasly.html" target="_blank" style="text-decoration: none">Pierre Gasly</a></td>
+            <td>Alpha Tauri Honda</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td><a href="https://www.formula1.com/en/drivers/hall-of-fame/Fernando_Alonso.html" target="_blank" style="text-decoration: none">Fernando Alonso</a></td>
+            <td>Alpine Renault</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td><a href="https://www.formula1.com/en/drivers/esteban-ocon.html" target="_blank" style="text-decoration: none">Esteban Ocon</a></td>
+            <td>Alpine Renault</td>
+            <td>74</td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td><a href="https://www.formula1.com/en/drivers/sebastian-vettel.html" target="_blank" style="text-decoration: none">Sebastian Vettel</a></td>
+            <td>Aston Martin Mercedes</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>13.</td>
+            <td><a href="https://www.formula1.com/en/drivers/lance-stroll.html" target="_blank" style="text-decoration: none">Lance Stroll</a></td>
+            <td>Aston Martin Mercedes</td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>14.</td>
+            <td><a href="https://www.formula1.com/en/drivers/yuki-tsunoda.html" target="_blank" style="text-decoration: none">Yuki Tsunoda</a></td>
+            <td>Alpha Tauri Honda</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>15.</td>
+            <td><a href="https://www.formula1.com/en/drivers/george-russell.html" target="_blank" style="text-decoration: none">George Russell</a></td>
+            <td>Williams Mercedes</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>16.</td>
+            <td><a href="https://www.formula1.com/en/drivers/hall-of-fame/Kimi_Raikkonen.html" target="_blank" style="text-decoration: none">Kimi Raikkonen</a></td>
+            <td>Alpha Romeo Racing Ferrari</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>17.</td>
+            <td><a href="https://www.formula1.com/en/drivers/nicholas-latifi.html" target="_blank" style="text-decoration: none">Nicholas Latifi</a></td>
+            <td>Williams Mercedes</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>18.</td>
+            <td><a href="https://www.formula1.com/en/latest/article.giovinazzi-on-his-3-years-in-f1-and-why-hes-convinced-he-hasnt-raced-his.6rYigUdVJwZYytTffhTNjU.html" target="_blank" style="text-decoration: none">Antonio Giovinazzi</a></td>
+            <td>Alpha Romeo Racing Ferrari</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">19.</td>
+            <td><a href="https://www.formula1.com/en/drivers/mick-schumacher.html" target="_blank" style="text-decoration: none">Mick Schumacher</a></td>
+            <td>Hass Ferrari</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.formula1.com/en/drivers/nikita-mazepin.html" target="_blank" style="text-decoration: none">Nikita Mazepin</a></td>
+            <td>Haas Ferrari</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <h1 id="CC">Constructor's Championship</h1>
+    <table style="border: none; border-bottom: white; width: 100%;">
+        <tr >
+            <th>#</th>
+            <th>Team Name</th>
+            <th>Points</th>
+        </tr>
+        <tr >
+            <td>1.</td>
+            <td>Mercedes</td>
+            <td>613.5</td>
+        </tr>
+        <tr >
+            <td>2.</td>
+            <td>Red Bull Racing Honda</td>
+            <td>585.5</td>
+        </tr>
+        <tr >
+            <td>3.</td>
+            <td>Ferrari</td>
+            <td>323.5</td>
+        </tr>
+        <tr >
+            <td>4.</td>
+            <td>McLaren Mercedes</td>
+            <td>275</td>
+        </tr>
+        <tr >
+            <td>5.</td>
+            <td>Alpine Renault</td>
+            <td>155</td>
+        </tr>
+        <tr >
+            <td>6.</td>
+            <td>Alpha Tauri Honda</td>
+            <td>142</td>
+        </tr>
+        <tr >
+            <td>7.</td>
+            <td>Aston Martin Mercedes</td>
+            <td>77</td>
+        </tr>
+        <tr >
+            <td>8.</td>
+            <td>Williams Mercedes</td>
+            <td>23</td>
+        </tr>
+        <tr >
+            <td>9.</td>
+            <td>Alpha Romeo Racing Ferrari</td>
+            <td>13</td>
+        </tr>
+        <tr >
+            <td>10.</td>
+            <td>Haas Ferrari</td>
+            <td>0</td>
+        </tr>
+    </table>
+    <h1 id="sch">2022 SCHEDULE</h1>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Pre-Season-Track-Session.html"><img src="image/test1.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Pre-Season-Test.html"><img src="image/test2.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Bahrain.html"><img src="image/R1.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Saudi_Arabia.html"><img src="image/R2.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Australia.html"><img src="image/R3.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/EmiliaRomagna.html"><img src="image/R4.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Miami.html"><img src="image/R5.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Spain.html"><img src="image/R6.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Monaco.html"><img src="image/R7.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Azerbaijan.html"><img src="image/R8.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Canada.html"><img src="image/R9.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Great_Britain.html"><img src="image/R10.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Austria.html"><img src="image/R11.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/France.html"><img src="image/R12.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Hungary.html"><img src="image/R13.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Belgium.html"><img src="image/R14.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Netherlands.html"><img src="image/R15.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Italy.html"><img src="image/R16.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Russia.html"><img src="image/R17.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Singapore.html"><img src="image/R18.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Japan.html"><img src="image/R19.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/United_States.html"><img src="image/R20.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Mexico.html"><img src="image/R21.png" alt="IMAGE" style="height:350px;"></a></div>
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/Brazil.html"><img src="image/R22.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    <div class="r">
+        <div class="col"><a href="https://www.formula1.com/en/racing/2022/United_Arab_Emirates.html"><img src="image/R23.png" alt="IMAGE" style="height:350px;"></a></div>
+    </div>
+    </div>
+</body>
